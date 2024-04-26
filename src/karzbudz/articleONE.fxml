@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="500.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karzbudz.ArticleONEController">
+   <children>
+      <WebView fx:id="webView" layoutY="60.0" prefHeight="740.0" prefWidth="500.0" />
+      <ToolBar prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #A5FFFB, #0097FF);">
+        <items>
+          <Button fx:id="homebutton" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: #A5FFFB; -fx-border-radius: 15;">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+        </items>
+      </ToolBar>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/AUTOBUZZ%20OFFICIAL%20WEBSITE.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

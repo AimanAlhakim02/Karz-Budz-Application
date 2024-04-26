@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="500.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karzbudz.mycarguideController">
+   <children>
+      <ToolBar prefHeight="59.0" prefWidth="500.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #A5FFFB, #0097FF);">
+         <items>
+            <Button fx:id="homebutton" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: #A5FFFB; -fx-border-radius: 15;">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </items></ToolBar>
+      <ImageView fitHeight="254.0" fitWidth="500.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/carguidebanner.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="70.0" layoutX="77.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="239.0" layoutX="138.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/learnmore.gif" />
+         </image>
+      </ImageView>
+      <Pane layoutX="60.0" layoutY="382.0" prefHeight="380.0" prefWidth="380.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #0023FF, #00FFFB); -fx-background-radius: 20;">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="17.0" mnemonicParsing="false" onAction="#goToJumpStartPage" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #A5FFFB, #0097FF); -fx-background-radius: 15;">
+               <graphic>
+                  <ImageView fitHeight="170.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/jumpstart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="193.0" layoutY="17.0" mnemonicParsing="false" onAction="#goToChangeTyrePage" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #A5FFFB, #0097FF); -fx-background-radius: 15;">
+               <graphic>
+                  <ImageView fitHeight="170.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/change.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="196.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #A5FFFB, #0097FF); -fx-background-radius: 15;">
+               <graphic>
+                  <ImageView fitHeight="170.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/coming.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/carguidepagetext.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

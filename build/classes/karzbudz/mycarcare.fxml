@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="500.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #0023FF, #00FFFB);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karzbudz.mycarcareController">
+   <children>
+      <ToolBar prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #A5FFFB, #0097FF);">
+        <items>
+          <Button fx:id="homebutton" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: #A5FFFB; -fx-border-radius: 15;">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+        </items>
+      </ToolBar>
+      <ImageView fitHeight="255.0" fitWidth="500.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/mycarcarebanner.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutY="311.0" prefHeight="487.0" prefWidth="500.0">
+         <content>
+            <AnchorPane prefHeight="550.0" prefWidth="485.0" style="-fx-background-color: black;">
+               <children>
+                  <Pane layoutX="33.0" layoutY="60.0" prefHeight="110.0" prefWidth="425.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+                     <children>
+                        <ImageView fitHeight="119.0" fitWidth="166.0" layoutX="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/carcare1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="213.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How to Take Care of Your Car &amp; Why You Should" wrappingWidth="188.13671875">
+                           <font>
+                              <Font name="Tahoma Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Hyperlink layoutX="211.0" layoutY="81.0" onAction="#goCarCareONE" text="Read more here" />
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Accordion layoutX="130.0" layoutY="225.0" />
+                  <Pane layoutX="31.0" layoutY="225.0" prefHeight="112.0" prefWidth="430.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+                     <children>
+                        <ImageView fitHeight="112.0" fitWidth="216.0" layoutX="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/mystery.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="238.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More Content Coming Soon" wrappingWidth="160.13671875">
+                           <font>
+                              <Font name="Tahoma Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Hyperlink layoutX="238.0" layoutY="75.0" text="Read more here" />
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="33.0" layoutY="390.0" prefHeight="110.0" prefWidth="425.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+                     <children>
+                        <ImageView fitHeight="111.0" fitWidth="200.0" layoutX="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/mystery.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="231.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More Content Coming Soon" wrappingWidth="204.13671875">
+                           <font>
+                              <Font name="Tahoma Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Hyperlink layoutX="231.0" layoutY="73.0" text="Read more here" />
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="-4.0" layoutY="-8.0" prefHeight="495.0" prefWidth="19.0" style="-fx-background-color: black;" />
+               </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Pane layoutY="292.0" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: black;" />
+      <Pane layoutX="468.0" layoutY="292.0" prefHeight="506.0" prefWidth="32.0" style="-fx-background-color: black;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/NOW%20IN%20MY%20CAR%20CARE%20PAGE.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="500.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karzbudz.JumpStartController">
+   <children>
+      <ToolBar prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #A5FFFB, #0097FF);">
+        <items>
+          <Button fx:id="homebutton" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: #A5FFFB; -fx-border-radius: 15;">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+        </items>
+      </ToolBar>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/HOW%20TO%20JUMP%20START%20CAR.gif" />
+         </image>
+      </ImageView>
+      <TabPane layoutX="9.0" layoutY="116.0" prefHeight="619.0" prefWidth="483.0" style="-fx-background-color: black;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-background-color: #FFC300; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Home">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="483.0" style="-fx-background-color: #FFC300; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="116.0" fitWidth="339.0" layoutX="72.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/titlejs.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="162.0" fitWidth="464.0" layoutX="10.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/carsomelogo.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Text fill="RED" layoutX="153.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="brought to you by" textAlignment="CENTER" wrappingWidth="178.189453125">
+                           <font>
+                              <Font name="System Bold Italic" size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab style="-fx-background-color: #FFC300; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 1">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: #FFC300; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="219.0" fitWidth="335.0" layoutX="76.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/js2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="40.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Things to Pay Attention to before You Jump-Start Your Car Battery">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="18.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.Refer to the car’s user manual. Jump-starting is actually not recommended for some car models since they have a sensitive circuit;" wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="19.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.Do not jump-start a car battery that is rusty, cracked, damaged, and leaking;" wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="17.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.Do not jump-start a dry battery;" wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="17.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.If you plan to jump-start your car battery by hooking it to another battery, make sure the voltage of the ‘donor’ car is the same or bigger than yours;" wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="18.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.Connect the alligator clip on the right place according to the right sequence;" wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="18.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6.Make sure the ‘donor’ car battery is in good condition;" wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="18.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7.Do not touch the car’s body or the alligator clip during the jump-start process." wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #FFC300; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 2">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: #FFC300; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="219.0" fitWidth="335.0" layoutX="76.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/js3.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="55.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What You Need to Know before You Jump-Start a Car Battery">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="18.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Positive terminal – the positive terminal is usually larger than the negative terminal. Marked with ‘POS’ or ‘+’, this terminal should be connected to the positive clip of the jumper cable which is red in color;" wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="19.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Negative terminal – the negative terminal of the battery is usually marked with ‘NEG’ or ‘-‘, and this terminal will be connected to the negative clip of the jumper cable which is black in color." wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="19.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment Required to Jump-Start Your Car" wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="19.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jumper cables: Jumper cables are thick electric cables with serrated clips on both ends that’s called crocodile clips a.k.a alligator clips because of its shape that looks like an alligator’s or crocodile’s jaw. The cables are usually distinguished by color – red indicating positive (+) and black indicating negative (-) polarity." wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="19.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Power source: You can use either a portable battery or another car’s battery as a power source to jump-start your own car battery. Portable batteries allow you to jump-start your car battery as long as it has enough charges and they are usually equipped with a special jumper cable." wrappingWidth="447.544921875">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #FFC300; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 3">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: #FFC300; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="219.0" fitWidth="335.0" layoutX="76.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/js1.png" />
+                           </image>
+                        </ImageView>
+                                    <Button fx:id="resetButton" layoutX="193.0" layoutY="543.0" onAction="#resetChecklist" prefHeight="22.0" prefWidth="104.0" style="-fx-background-color: #FFC300; -fx-border-color: black; -fx-border-image-width: 10; -fx-text-fill: black;" text="Reset Checklist" />
+                        <Text layoutX="121.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Proper Way to Jump-Start Your Car" textAlignment="CENTER">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <CheckBox fx:id="checkBox1" layoutX="162.0" layoutY="308.0" mnemonicParsing="false" text="1) Turn Off the Engine">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkBox2" layoutX="173.0" layoutY="332.0" mnemonicParsing="false" text="2) Park Properly">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkBox3" layoutX="162.0" layoutY="356.0" mnemonicParsing="false" text="3) Remove the Keys">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkBox4" layoutX="58.0" layoutY="379.0" mnemonicParsing="false" text="4) Connect the Red Jumper Cable to the Positive Terminal">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkBox5" layoutX="50.0" layoutY="402.0" mnemonicParsing="false" text="5) Connect the Black Jumper Cable to the Negative Terminal">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkBox6" layoutX="165.0" layoutY="427.0" mnemonicParsing="false" text="6) Start the Engine">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkBox7" layoutX="175.0" layoutY="450.0" mnemonicParsing="false" text="7) Wait a Moment">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkBox8" layoutX="164.0" layoutY="473.0" mnemonicParsing="false" text="8) Let the Engine Run">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkBox9" layoutX="133.0" layoutY="495.0" mnemonicParsing="false" text="9) Disconnect the Jumper Cables">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="checkBox10" layoutX="180.0" layoutY="519.0" mnemonicParsing="false" text="10) Test Drive">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </CheckBox>
+                        <Text layoutX="32.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make Sure You Follow Checklist Below And Tick After Done Each Part:" textAlignment="CENTER">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

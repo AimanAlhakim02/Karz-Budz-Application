@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="500.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karzbudz.ChangeTyreController">
+   <children>
+      <ToolBar prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #A5FFFB, #0097FF);">
+        <items>
+          <Button fx:id="homebutton" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: #A5FFFB; -fx-border-radius: 15;">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+        </items>
+      </ToolBar>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/HOW%20TO%20JUMP%20START%20CAR.gif" />
+         </image>
+      </ImageView>
+      <TabPane layoutX="9.0" layoutY="116.0" prefHeight="619.0" prefWidth="483.0" style="-fx-background-color: black;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Home">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="483.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="121.0" fitWidth="366.0" layoutX="59.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/titlechangetyre.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="446.0" layoutX="32.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/bjaklogo.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="RED" layoutX="152.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="brought to you by" textAlignment="CENTER" wrappingWidth="178.189453125">
+                           <font>
+                              <Font name="System Bold Italic" size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 1">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="380.0" fitWidth="500.0" layoutX="53.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ct1.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="132.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 1: Park your car at a safe place">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="22.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remain calm and move your car to a safe place such as to the shoulder of the road or emergency lane, or an area easily seen by other road users.Please do not park on a hilly or uneven area. Additionally, ensure that the road is flat to avoid your car from slipping out of the car jack." textAlignment="CENTER" wrappingWidth="439.302734375">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 2">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="380.0" fitWidth="500.0" layoutX="53.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ct2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="132.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 2: Place a warning triangle sign">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="22.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Previously, Bjak has shared the essential items in a car emergency kit which include a warning triangle.As soon as you park your car at a safe place, ensure that you place a warning triangle at least 45 metres behind your car. This is to caution other road users of your emergency and, in turn, avoid accidents." textAlignment="CENTER" wrappingWidth="439.302734375">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 3">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="380.0" fitWidth="500.0" layoutX="28.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ct3.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="83.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 3: Take out the necessary tools to change tyres">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="22.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Before changing the tyres, take out your spare tyres and the necessary tools to change tyres which are a jack and lug wrench from the rear bonnet. Take out the nuts specific for the rim to replace your sports rim." textAlignment="CENTER" wrappingWidth="439.302734375">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 4">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="380.0" fitWidth="500.0" layoutX="53.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ct4.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="168.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 4: Loosen tyre nuts">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="22.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use a lug wrench to remove the tyre nuts or screws. Before that, remember to place the tyres on a flat surface to prevent the car from slipping out of the car jack when changing the tyres." textAlignment="CENTER" wrappingWidth="439.302734375">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 5">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="380.0" fitWidth="500.0" layoutX="53.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ct5.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="179.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 5: Jack your car">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="22.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place the jack near your car. Avoid jacking your car too high to prevent it from slipping. Jack your car until you can sufficiently rotate the tyres." textAlignment="CENTER" wrappingWidth="439.302734375">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 6">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="380.0" fitWidth="500.0" layoutX="53.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ct6.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="179.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 6: Change car tyres">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="22.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove the car nuts in a counterclockwise motion. Then, remove the flat tyres with the spare ones and immediately tighten the nuts." textAlignment="CENTER" wrappingWidth="439.302734375">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 7">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="380.0" fitWidth="500.0" layoutX="53.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ct7.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="168.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 7: Tighten tyre nuts">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="22.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lower your car using the jack. Step on the lug wrench to ensure the screw or nut grip is firm and secure. You are advised to tighten the tyre nuts diagonally." textAlignment="CENTER" wrappingWidth="439.302734375">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3;" text="Step 8">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="483.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;">
+                     <children>
+                        <ImageView fitHeight="380.0" fitWidth="500.0" layoutX="53.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ct8.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="168.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 8: Replace spare tyres">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="22.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Despite changing your tyres, you are advised to change the spare tyres at any tyre outlet immediately. This is as most spare tyres can only move on average between 80 km to 113 km with a maximum speed of 80km/h." textAlignment="CENTER" wrappingWidth="439.302734375">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

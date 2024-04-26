@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="500.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karzbudz.cartionaryController">
+   <children>
+      <ToolBar prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #A5FFFB, #0097FF);">
+        <items>
+          <Button fx:id="homebutton" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: #A5FFFB; -fx-border-radius: 15;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+        </items>
+      </ToolBar>
+      <ImageView fitHeight="283.0" fitWidth="500.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cartionarybanner.png" />
+         </image>
+      </ImageView>
+      <Accordion layoutX="30.0" layoutY="339.0" prefHeight="200.0" prefWidth="440.0">
+   <panes>
+      <TitledPane alignment="CENTER" text="PERODUA">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perusahaan Otomobil Kedua Sendirian Berhad (Second Automobile Enterprise Private Limited), also known as Perodua, is Malaysia's largest vehicle manufacturer, followed by Proton." wrappingWidth="409.63671875">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+                        <Hyperlink alignment="CENTER" layoutX="122.0" layoutY="59.0" onAction="#switchToPerodua" text="Read more about PERODUA here">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Hyperlink>
+               </children>
+            </AnchorPane>
+         </content>
+         <graphic>
+            <ImageView fitHeight="87.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/perodua.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Tahoma Bold" size="40.0" />
+         </font>
+      </TitledPane>
+   </panes>
+</Accordion>
+<Accordion layoutX="30.0" layoutY="553.0" prefHeight="200.0" prefWidth="440.0">
+   <panes>
+      <TitledPane alignment="CENTER" text="PROTON">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Proton Holdings Berhad (PROTON) is a Malaysian multinational automobile manufacturer. Proton was Malaysia's only national badged vehicle company until 1993,when Perodua arrived. The corporation is based in Shah Alam, Selangor," wrappingWidth="415.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+                        <Hyperlink alignment="CENTER" layoutX="114.0" layoutY="59.0" onAction="#switchToProton" text="Read more about PROTON here">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Hyperlink>
+               </children>
+            </AnchorPane>
+         </content>
+         <graphic>
+            <ImageView fitHeight="87.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/proton.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Tahoma Bold" size="40.0" />
+         </font>
+      </TitledPane>
+   </panes>
+</Accordion>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/NOW%20IN%20CAR-TIONARY%20PAGE.gif" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="153.0" layoutY="782.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More Car Brands Coming Soon..." textAlignment="CENTER">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Text>
+
+   </children>
+</AnchorPane>
