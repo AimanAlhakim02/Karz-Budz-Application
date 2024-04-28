@@ -15,9 +15,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- */
 public class mycarcareController implements Initializable {
 
     @FXML

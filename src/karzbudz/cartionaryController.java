@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package karzbudz;
 
 import java.io.IOException;
@@ -19,11 +15,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author user
- */
 public class cartionaryController implements Initializable {
 
     @FXML
